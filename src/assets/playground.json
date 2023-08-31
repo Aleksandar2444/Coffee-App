@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Latte",
+    "type": "latte"
+  },
+  {
+    "name": "Black",
+    "type": "black"
+  },
+  {
+    "name": "Flat White",
+    "type": "flat-white"
+  },
+  {
+    "name": "Cappuccino",
+    "type": "cappuccino"
+  },
+  {
+    "name": "Americano",
+    "type": "americano"
+  },
+  {
+    "name": "Espresso",
+    "type": "espresso"
+  },
+  {
+    "name": "Doppio",
+    "type": "doppio"
+  },
+  {
+    "name": "Cortado",
+    "type": "cortado"
+  },
+  {
+    "name": "Macchiato",
+    "type": "macchiato"
+  },
+  {
+    "name": "Mocha",
+    "type": "mocha"
+  },
+  {
+    "name": "Affogato",
+    "type": "affogato"
+  },
+  {
+    "name": "Con Panna",
+    "type": "con-panna"
+  },
+  {
+    "name": "Irish",
+    "type": "irish"
+  },
+  {
+    "name": "Cafe Au Lait",
+    "type": "cafe-au-lait"
+  }
+]

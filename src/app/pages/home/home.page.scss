@@ -1,0 +1,150 @@
+ion-toolbar {
+  h1 {
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(0deg, #50ff9f 0%, #7974ff 75%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #50c8ff;
+    text-align: center;
+  }
+}
+
+ion-content {
+  h1 {
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(0deg, #50ff9f 0%, #7974ff 75%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #50c8ff;
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+  }
+
+  img {
+    position: absolute;
+    opacity: 0.5;
+    height: -webkit-fill-available;
+    width: 100%;
+  }
+
+  p {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .container {
+    position: relative;
+    height: 40%;
+    overflow: hidden;
+
+    .wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .words {
+        height: 1.8em;
+        overflow: hidden;
+        text-align: center;
+
+        p {
+          font-size: 2em;
+          line-height: 0.9em;
+          font-family: "Roboto", sans-serif;
+          margin: 0;
+          padding: 0;
+          color: #a39783;
+          text-transform: uppercase;
+        }
+      }
+
+      .words:nth-child(1) {
+        margin-left: -2.6em;
+      }
+
+      .words:nth-child(2) {
+        margin: 0.6em 0;
+      }
+
+      .words:nth-child(2) p {
+        color: #e8d6ba;
+      }
+
+      .words:nth-child(3) {
+        margin-left: 2.6em;
+      }
+
+      .words:nth-child(odd) {
+        transform: skew(60deg, -30deg);
+      }
+
+      .words:nth-child(even) {
+        transform: skew(0deg, -30deg) scaleY(1.5);
+      }
+
+      .words p {
+        animation: move 6s infinite linear;
+      }
+
+      @keyframes move {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-300%);
+        }
+      }
+    }
+  }
+
+  .icons__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 20px;
+      background: -webkit-linear-gradient(0deg, #50ff9f 0%, #7974ff 75%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #50c8ff;
+      text-align: center;
+      position: relative;
+    }
+
+    &-icons {
+      display: flex;
+      gap: 10px;
+      font-size: 30px;
+
+      .ig {
+        border-radius: 10px;
+        background: linear-gradient(
+          45deg,
+          #f09433 0%,
+          #e6683c 25%,
+          #dc2743 50%,
+          #cc2366 75%,
+          #bc1888 100%
+        );
+      }
+
+      .fb {
+        border-radius: 10px;
+        background: linear-gradient(120deg, #4068bf, #ffffff);
+      }
+    }
+  }
+}
+
+.footer {
+  color: gray;
+  padding: 0;
+  text-align: center;
+}

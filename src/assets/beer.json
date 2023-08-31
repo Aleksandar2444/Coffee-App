@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Skopsko",
+    "price": "100den.",
+    "image": "assets/images/skopsko.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Heineken",
+    "price": "150den.",
+    "image": "assets/images/heineken.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Stela",
+    "price": "130den.",
+    "image": "assets/images/stela.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Corona",
+    "price": "170den.",
+    "image": "assets/images/corona.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Budweiser",
+    "price": "160den.",
+    "image": "https://beverages2u.com/wp-content/uploads/2020/12/budweiser-lager.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Guinness",
+    "price": "180den.",
+    "image": "https://www.magicdrinks.co.uk/wp-content/uploads/Guinness-24-X330-Draught.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Pilsner Urquell",
+    "price": "140den.",
+    "image": "https://produits.bienmanger.com/5874-0w470h470_Pilsner_Urquell_Czech_Beer.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Sapporo",
+    "price": "190den.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiGV-HN48ZQECO2ix2qp_KbHiBn-ZKpVwatbsFLIhOMsCH6GjtGO-QRoKd3kMJ6dR6gTU&usqp=CAU"
+  },
+  {
+    "id": 9,
+    "name": "Beck's",
+    "price": "150den.",
+    "image": "https://m.media-amazon.com/images/I/71H4Wd8QVoL.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Asahi",
+    "price": "170den.",
+    "image": "https://produits.bienmanger.com/2264-0w470h470_Asahi_Beer_From_Japan.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Peroni",
+    "price": "160den.",
+    "image": "https://www.kalsa.store/wp-content/uploads/BR0682.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Tecate",
+    "price": "130den.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIrTs3XsnUflxX3G1pWY0hXBcnE9Y2BHXMPkPlT_b59hG2dPufPKX4ATN53dzokUa6O1M&usqp=CAU"
+  },
+  {
+    "id": 13,
+    "name": "Kronenbourg 1664",
+    "price": "180den.",
+    "image": "https://bistravoda.mk/wp-content/uploads/2023/04/Untitled-design-43.png"
+  },
+  {
+    "id": 14,
+    "name": "Efes Pilsen",
+    "price": "140den.",
+    "image": "https://www.monde-selection.com/wp-content/uploads/2023/05/1039193.png"
+  },
+  {
+    "id": 15,
+    "name": "Modelo",
+    "price": "150den.",
+    "image": "https://mestizomarket.com/wp-content/uploads/2019/07/Modelo-%E2%80%93-Especial-Beer-Cerveza-355ml.png"
+  }
+]
