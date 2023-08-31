@@ -74,6 +74,18 @@ export class DataProductsService implements OnDestroy {
       .subscribe();
   }
 
+  getCoffeeBarPhotos() {
+    return this.http
+      .get('assets/coffee-bar.json')
+      .pipe(
+        map((data) => {
+          this.jsonDataSubject.next(data);
+        }),
+        takeUntil(this.unsubscribe$)
+      )
+      .subscribe();
+  }
+
   ngOnDestroy() {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
