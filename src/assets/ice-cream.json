@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Strawberry",
+    "price": "50den.",
+    "image": "assets/images/strawberry.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Chocolate",
+    "price": "50den.",
+    "image": "assets/images/chocolate.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Vanilla",
+    "price": "50den.",
+    "image": "assets/images/vanilla.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Banana",
+    "price": "50den.",
+    "image": "assets/images/banana.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Mint Chocolate Chip",
+    "price": "60den.",
+    "image": "https://www.chewoutloud.com/wp-content/uploads/2020/04/Mint-Chip-Ice-Cream-Square.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Coffee",
+    "price": "55den.",
+    "image": "https://celebratingsweets.com/wp-content/uploads/2021/06/Coffee-Ice-Cream-1-2.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Cookies and Cream",
+    "price": "60den.",
+    "image": "https://culinaryshades.com/wp-content/uploads/2022/12/Cookie-cream-ice-cream-main-sqr.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Rocky Road",
+    "price": "65den.",
+    "image": "https://bakeplaysmile.com/wp-content/uploads/2021/10/Rocky-Road-2-2.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Salted Caramel",
+    "price": "65den.",
+    "image": "https://www.thespruceeats.com/thmb/jZmYRDpWby4VM4r2w5Cah1Vth_U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SaltedCaramelIceCreamHERO-9e49945bc9fb4afca856e37f5b1bbbe5.jpg"
+  }
+]

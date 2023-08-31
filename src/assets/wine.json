@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Temjanika",
+    "price": "1200den.",
+    "image": "assets/images/temjanika.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Aleksandria",
+    "price": "1400den.",
+    "image": "assets/images/aleksandrija.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Sauvignon Black",
+    "price": "1900den.",
+    "image": "assets/images/sauvignon-black.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Roze",
+    "price": "900den.",
+    "image": "assets/images/roze.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Merlot Reserve",
+    "price": "1600den.",
+    "image": "https://www.zantho.com/wp-content/uploads/2021/02/ZANTHO_Merlot-Reserve-Magnum.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Cabernet Sauvignon",
+    "price": "1800den.",
+    "image": "https://finewine.mk/wp-content/uploads/2022/05/popovi_cab.sauvignon.png"
+  },
+  {
+    "id": 7,
+    "name": "Chardonnay",
+    "price": "1500den.",
+    "image": "https://data.negoziodelvino.it/imgprodotto/chardonnay-doc_14505.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Pinot Noir",
+    "price": "1700den.",
+    "image": "https://www.maset.com/cdnassets/products/red-wines/lg/bottle/pinot-noir-lg-1.png"
+  },
+  {
+    "id": 9,
+    "name": "Zinfandel",
+    "price": "2000den.",
+    "image": "https://assets.sainsburys-groceries.co.uk/gol/3187340/1/640x640.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Malbec",
+    "price": "1750den.",
+    "image": "https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_1800,c_limit/e_trim/v1/imagens/products/B48130/B48130_Malbec_Desodorante_Col%C3%B4nia_1.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Syrah",
+    "price": "1900den.",
+    "image": "https://www.wineandmore.com/wp-content/uploads/2021/06/Kamnik-Ten-Barrels-Syrah.jpg"
+  }
+]

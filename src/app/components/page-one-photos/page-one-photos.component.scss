@@ -1,0 +1,60 @@
+ion-modal#example-modal {
+  --width: fit-content;
+  --min-width: 250px;
+  --height: fit-content;
+  --border-radius: 6px;
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+}
+
+ion-modal#example-modal h1 {
+  margin: 20px 20px 10px 20px;
+}
+
+ion-modal#example-modal ion-icon {
+  margin-right: 6px;
+
+  width: 48px;
+  height: 48px;
+
+  padding: 4px 0;
+
+  color: #aaaaaa;
+}
+
+ion-modal#example-modal .wrapper {
+  margin-bottom: 10px;
+}
+
+.image__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  ion-row {
+    justify-content: center;
+    align-items: center;
+
+    ion-img {
+      width: 79px;
+      height: 100px;
+      object-fit: cover;
+    }
+  }
+}
+
+.expanded__image {
+  position: relative;
+
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+
+    ion-icon {
+      width: 30px !important;
+      height: 30px !important;
+      padding: 6px;
+      position: absolute;
+    }
+  }
+}
