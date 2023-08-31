@@ -20,7 +20,16 @@ export class PageThreeFeedbackComponent implements OnInit {
   ionViewWillEnter() {
     console.log('Page Three View-Will-Enter');
   }
+
+  ionViewDidEnter() {
+    console.log('Page Three View-Did-Enter');
+  }
+
   ionViewWillLeave() {
     console.log('Page Three View-Will-Leave');
+  }
+
+  ionViewDidLeave() {
+    console.log('Page Three View-Did-Leave');
   }
 }

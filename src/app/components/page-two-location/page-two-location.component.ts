@@ -22,7 +22,15 @@ export class PageTwoLocationComponent implements OnInit {
     console.log('Page Two View-Will-Enter');
   }
 
+  ionViewDidEnter() {
+    console.log('Page Two View-Did-Enter');
+  }
+
   ionViewWillLeave() {
     console.log('Page Two View-Will-Leave');
+  }
+
+  ionViewDidLeave() {
+    console.log('Page Two View-Did-Leave');
   }
 }

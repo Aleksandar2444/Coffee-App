@@ -4,131 +4,34 @@
   </ion-toolbar>
 </ion-header>
 <ion-content class="ion-padding">
-  <h1>Page One</h1>
+  <h1>Capturing the essence of the view</h1>
   <ion-nav-link router-direction="forward" [component]="component">
-    <ion-button>Go to Page Two</ion-button>
+    <p class="navigate">Find our location</p>
+    <ion-icon name="arrow-forward-outline"></ion-icon>
   </ion-nav-link>
 
-  <!--/* <div class="image__container">
-
-  </div> */-->
   <div class="image__container">
     <ion-row>
-      <ion-col size="3">
-        <div id="open-custom-dialog" expand="block">
-          <ion-img
-            src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwc2hvcCUyMGludGVyaW9yfGVufDB8fDB8fHww&w=1000&q=80"
-            alt="jpg"
-          ></ion-img>
-        </div>
-        <ion-modal id="example-modal" #modal trigger="open-custom-dialog">
-          <ng-template>
-            <div class="expanded__image">
-              <div class="expanded__image-close">
-                <ion-icon
-                  name="close-circle-outline"
-                  (click)="modal.dismiss()"
-                ></ion-icon>
+      <ng-container *ngFor="let data of jsonData">
+        <ion-col size="3">
+          <div id="{{ data.id }}" expand="block">
+            <ion-img src="{{ data.image }}" alt="jpg"></ion-img>
+          </div>
+          <ion-modal id="example-modal" #modal trigger="{{ data.id }}">
+            <ng-template>
+              <div class="expanded__image">
+                <div class="expanded__image-close">
+                  <ion-icon
+                    name="close-circle-outline"
+                    (click)="modal.dismiss()"
+                  ></ion-icon>
+                </div>
+                <ion-img src="{{ data.image }}" alt="jpg"></ion-img>
               </div>
-              <ion-img
-                src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwc2hvcCUyMGludGVyaW9yfGVufDB8fDB8fHww&w=1000&q=80"
-                alt="jpg"
-              ></ion-img>
-            </div>
-          </ng-template>
-        </ion-modal>
-      </ion-col>
-      <!-- TEST -->
-      <ion-col size="3">
-        <div id="open-custom-dialog-2" expand="block">
-          <ion-img
-            src="https://docs-demo.ionic.io/assets/madison.jpg"
-            alt="jpg"
-          ></ion-img>
-        </div>
-        <ion-modal id="example-modal" #modal2 trigger="open-custom-dialog-2">
-          <ng-template>
-            <div class="expanded__image">
-              <div class="expanded__image-close">
-                <ion-icon
-                  name="close-circle-outline"
-                  (click)="modal2.dismiss()"
-                ></ion-icon>
-              </div>
-              <ion-img
-                src="https://docs-demo.ionic.io/assets/madison.jpg"
-                alt="jpg"
-              ></ion-img>
-            </div>
-          </ng-template>
-        </ion-modal>
-        <!--/* <div>
-          <ion-img
-            src="https://docs-demo.ionic.io/assets/madison.jpg"
-            alt="jpg"
-          ></ion-img>
-        </div> */-->
-      </ion-col>
-      <ion-col size="3">
-        <div id="open-custom-dialog-3" expand="block">
-          <ion-img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7xVUgIgUDP1gKhyvfRlEaDR0h6bxiVo6x2ieBAF_hMviJ0mSU7nYOE21Ham6eR9OrNLE&usqp=CAU"
-            alt="jpg"
-          ></ion-img>
-        </div>
-        <ion-modal id="example-modal" #modal3 trigger="open-custom-dialog-3">
-          <ng-template>
-            <div class="expanded__image">
-              <div class="expanded__image-close">
-                <ion-icon
-                  name="close-circle-outline"
-                  (click)="modal3.dismiss()"
-                ></ion-icon>
-              </div>
-              <ion-img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7xVUgIgUDP1gKhyvfRlEaDR0h6bxiVo6x2ieBAF_hMviJ0mSU7nYOE21Ham6eR9OrNLE&usqp=CAU"
-                alt="jpg"
-              ></ion-img>
-            </div>
-          </ng-template>
-        </ion-modal>
-        <!--/* <div>
-          <ion-img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7xVUgIgUDP1gKhyvfRlEaDR0h6bxiVo6x2ieBAF_hMviJ0mSU7nYOE21Ham6eR9OrNLE&usqp=CAU"
-            alt="jpg"
-          ></ion-img>
-        </div> */-->
-      </ion-col>
-      <ion-col size="3">
-        <div id="open-custom-dialog-4" expand="block">
-          <ion-img
-            src="https://media.istockphoto.com/id/1464754561/photo/coffee-cup-latte-art-on-table-in-background-of-interior-of-coffee-shop-local-small-businesses.webp?b=1&s=170667a&w=0&k=20&c=ClDe_nXR-zyUOtWwoRtqfKm3AJDVVorgiPS_YDJT2GE="
-            alt="jpg"
-          ></ion-img>
-        </div>
-        <ion-modal id="example-modal" #modal4 trigger="open-custom-dialog-4">
-          <ng-template>
-            <div class="expanded__image">
-              <div class="expanded__image-close">
-                <ion-icon
-                  name="close-circle-outline"
-                  (click)="modal4.dismiss()"
-                ></ion-icon>
-              </div>
-              <ion-img
-                src="https://media.istockphoto.com/id/1464754561/photo/coffee-cup-latte-art-on-table-in-background-of-interior-of-coffee-shop-local-small-businesses.webp?b=1&s=170667a&w=0&k=20&c=ClDe_nXR-zyUOtWwoRtqfKm3AJDVVorgiPS_YDJT2GE="
-                alt="jpg"
-              ></ion-img>
-            </div>
-          </ng-template>
-        </ion-modal>
-        <!--/* <div>
-          <ion-img
-            src="https://media.istockphoto.com/id/1464754561/photo/coffee-cup-latte-art-on-table-in-background-of-interior-of-coffee-shop-local-small-businesses.webp?b=1&s=170667a&w=0&k=20&c=ClDe_nXR-zyUOtWwoRtqfKm3AJDVVorgiPS_YDJT2GE="
-            alt="jpg"
-          ></ion-img>
-        </div> */-->
-      </ion-col>
+            </ng-template>
+          </ion-modal>
+        </ion-col>
+      </ng-container>
     </ion-row>
   </div>
 </ion-content>
