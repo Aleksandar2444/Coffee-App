@@ -1,36 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { PageThreeFeedbackComponent } from '../page-three-feedback/page-three-feedback.component';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-page-two-location',
   templateUrl: './page-two-location.component.html',
   styleUrls: ['./page-two-location.component.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule],
+  imports: [IonicModule, CommonModule, FormsModule, HttpClientModule],
 })
 export class PageTwoLocationComponent implements OnInit {
   component = PageThreeFeedbackComponent;
 
-  constructor() {}
+  public photos!: string;
+  private activateRoute = inject(ActivatedRoute);
+
+  constructor() {
+    this.photos = this.activateRoute.snapshot.paramMap.get('id') as string;
+    console.log(this.photos);
+  }
 
   ngOnInit() {}
-
-  ionViewWillEnter() {
-    console.log('Page Two View-Will-Enter');
-  }
-
-  ionViewDidEnter() {
-    console.log('Page Two View-Did-Enter');
-  }
-
-  ionViewWillLeave() {
-    console.log('Page Two View-Will-Leave');
-  }
-
-  ionViewDidLeave() {
-    console.log('Page Two View-Did-Leave');
-  }
 }

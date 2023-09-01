@@ -31,20 +31,4 @@ export class PageOnePhotosComponent implements OnInit {
       this.jsonData = data;
     });
   }
-
-  ionViewWillEnter() {
-    console.log('Page One View-Will-Enter');
-  }
-
-  ionViewDidEnter() {
-    console.log('Page One View-Did-Enter');
-  }
-
-  ionViewWillLeave() {
-    console.log('Page One View-Will-Leave');
-  }
-
-  ionViewDidLeave() {
-    console.log('Page One View-Did-Leave');
-  }
 }

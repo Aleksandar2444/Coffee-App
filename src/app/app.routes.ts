@@ -36,6 +36,13 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'playground',
+    loadComponent: () =>
+      import('./pages/playground/playground.page').then(
+        (m) => m.PlaygroundPage
+      ),
+  },
+  {
     path: 'components/dive-deep',
     loadComponent: () =>
       import('./components/dive-deep/dive-deep.component').then(
@@ -43,17 +50,18 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'components/dive-deep/location',
+    loadComponent: () =>
+      import('./components/page-two-location/page-two-location.component').then(
+        (m) => m.PageTwoLocationComponent
+      ),
+  },
+  {
     path: 'home',
     loadComponent: () =>
       import('./pages/home/home.page').then((m) => m.HomePage),
   },
-  {
-    path: 'playground',
-    loadComponent: () =>
-      import('./pages/playground/playground.page').then(
-        (m) => m.PlaygroundPage
-      ),
-  },
+
   {
     path: '**',
     loadComponent: () =>

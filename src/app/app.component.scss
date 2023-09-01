@@ -9,6 +9,19 @@ ion-menu.md ion-content {
   --padding-bottom: 20px;
 }
 
+ion-list {
+  ion-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px 20px 20px;
+
+    ion-menu-button {
+      font-size: 40px;
+    }
+  }
+}
+
 ion-menu.md ion-list {
   padding: 20px 0;
 }
@@ -53,6 +66,10 @@ ion-menu.md ion-item.selected {
   --background: rgba(var(--ion-color-primary-rgb), 0.14);
 }
 
+ion-icon {
+  display: none;
+}
+
 ion-menu.md ion-item.selected ion-icon {
   color: var(--ion-color-primary);
 }
@@ -80,7 +97,7 @@ ion-menu.ios ion-note {
 
 ion-menu.ios ion-item {
   --padding-start: 16px;
-  --padding-end: 16px;
+  --padding-end: 0px;
   --min-height: 50px;
 }
 
@@ -91,6 +108,13 @@ ion-menu.ios ion-item.selected ion-icon {
 ion-menu.ios ion-item ion-icon {
   font-size: 24px;
   color: #73849a;
+}
+
+ion-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 ion-menu.ios ion-list#labels-list ion-list-header {
@@ -115,8 +139,16 @@ ion-note {
   color: var(--ion-color-medium-shade);
 }
 
+ion-item {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
 ion-item.selected {
   --color: var(--ion-color-primary);
+  border-bottom: 1px solid;
 }
 
 h1 {
@@ -126,4 +158,24 @@ h1 {
   -webkit-text-fill-color: transparent;
   color: #50c8ff;
   text-align: center;
+}
+
+// Custom class to access #shadow-root element class
+.custom-menu-inner {
+  --width: 100%;
+}
+
+.icons__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 80px;
+
+  ion-icon {
+    font-size: 30px;
+    display: block;
+    color: white;
+  }
 }
