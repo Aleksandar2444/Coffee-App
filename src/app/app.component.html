@@ -1,9 +1,16 @@
 <ion-app>
   <ion-split-pane contentId="main-content">
-    <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
+    <!--/* binding the custom class to apply the scss style to the #shadow-root element */-->
+    <ion-menu
+      contentId="main-content"
+      type="overlay"
+      [class.custom-menu-inner]="true"
+    >
+      <ion-content [fullscreen]="true">
         <ion-list id="inbox-list">
-          <h1>Cafedra</h1>
+          <ion-buttons class="custom__button" slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
 
           <ion-menu-toggle
             auto-hide="false"
@@ -26,6 +33,12 @@
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
+
+        <div class="icons__wrapper">
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </div>
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>

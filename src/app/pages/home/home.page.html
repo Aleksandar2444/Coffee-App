@@ -1,15 +1,14 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-  </ion-toolbar>
+  <ion-buttons class="custom__button" slot="start">
+    <h1 class="coffee__shop-title">Cafedra</h1>
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <img src="assets/images/homecoffee1.jpg" />
 
-  <h1>Cafedra</h1>
+  <h1>Drinks & Events</h1>
 
   <p>Welcome to our cozy coffee haven!</p>
 
@@ -45,9 +44,9 @@
   </div>
 </ion-content>
 
-<ion-footer>
+<ion-footer [class.custom-toolbar-background]="true">
   <ion-toolbar>
-    <ion-title class="footer"
+    <ion-title class="footer-title"
       >Copyright <span>2013 - {{ year }}</span> &copy; Cafedra</ion-title
     >
   </ion-toolbar>
